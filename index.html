@@ -432,5 +432,38 @@
         </div>
       </div>
     </footer>
+    <form>
+      <h2 class="form-title">Оставьте свои данные, мы вам перезвоним</h2>
+      <p class="form-field">
+        <label for="name" ></label>Имя</label>
+        <input type="text" name="name" id="name" />
+      </p>
+      <p class="form-field">
+        <label for="tel" ></label>Телефон</label>
+        <input type="tel" name="tel" id="tel" />
+      </p>
+      <p class="form-field">
+        <label for="mail" ></label>Почта</label>
+        <input type="email" name="mail" id="mail" />
+      </p>
+      <p class="form-comment">
+        <label for="comment" ></label>Комментарий</label>
+        <textarea
+          name="comment"
+          id="comment"
+          rows="10"
+          class="comment"
+          placeholder="Комментарий"
+        ></textarea>
+      </p>
+      <p class="checkbox">
+        <input type="checkbox" name="topik" value="agree " id="agree" />
+        <label for="agree" class="checkbox-label"
+          >Соглашаюсь с рассылкой и принимаю Условия договора</label
+        >
+      </p>
+
+      <button type="submit" class="button-form">Отправить</button>
+    </form>
   </body>
 </html>
