@@ -275,7 +275,23 @@
           </ul>
         </div>
         <div class="footer-secondary-block">
-          <b class="footer-title uppercase">Подпишитесь на рассылку</b>
+          <form class="form-footer">
+            <b class="footer-title uppercase">Подпишитесь на рассылку</b>
+            <!-- <label for="mail"></label>Почта</label> -->
+            <div class="footer-form-position">
+              <input
+                class="input-footer"
+                type="email"
+                name="mail"
+                id="mail"
+                placeholder="E-mail"
+              />
+              <button type="submit" class="button-footer">Подписаться</button>
+              <svg class="icon-telegram">
+                <use href="./sprite/symb.svg#icon-telegram"></use>
+              </svg>
+            </div>
+          </form>
         </div>
       </div>
     </footer>
