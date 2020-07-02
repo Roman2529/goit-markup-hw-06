@@ -439,10 +439,12 @@
                 id="mail"
                 placeholder="E-mail"
               />
-              <button type="submit" class="button-footer">Подписаться</button>
-              <svg class="icon-telegram">
-                <use href="./sprite/symb.svg#icon-telegram"></use>
-              </svg>
+              <button type="submit" class="button-footer">
+                Подписаться
+                <svg class="icon-telegram">
+                  <use href="./sprite/symb.svg#icon-telegram"></use>
+                </svg>
+              </button>
             </div>
           </form>
         </div>
@@ -450,7 +452,7 @@
     </footer>
     <form class="form-main">
       <h2 class="form-title">Оставьте свои данные, мы вам перезвоним</h2>
-      <p class="form-field">
+      <div class="form-field">
         <input
           class="form-input"
           type="text"
@@ -462,8 +464,8 @@
         <svg class="icon-input">
           <use href="./sprite/symb.svg#icon-person-modal"></use>
         </svg>
-      </p>
-      <p class="form-field">
+      </div>
+      <div class="form-field">
         <input
           class="form-input"
           type="tel"
@@ -475,8 +477,8 @@
         <svg class="icon-input">
           <use href="./sprite/symb.svg#icon-phone-modal"></use>
         </svg>
-      </p>
-      <p class="form-field">
+      </div>
+      <div class="form-field">
         <input
           class="form-input"
           type="email"
@@ -488,8 +490,8 @@
         <svg class="icon-input">
           <use href="./sprite/symb.svg#icon-email-modal"></use>
         </svg>
-      </p>
-      <p class="form-comment">
+      </div>
+      <div class="form-comment">
         <textarea
           name="comment"
           id="comment"
@@ -497,9 +499,8 @@
           class="comment"
           placeholder="Комментарий"
         ></textarea>
-        <label for="comment">Комментарий</label>
-      </p>
-      <p class="checkbox">
+      </div>
+      <div class="checkbox">
         <label for="agree" class="checkbox-label"
           ><input
             class="checkbox-input"
@@ -515,11 +516,13 @@
           Соглашаюсь с рассылкой и принимаю
           <a class="form-link" href="#">Условия договора</a></label
         >
-      </p>
+      </div>
       <button type="submit" class="button-form">Отправить</button>
-      <!-- <svg class="icon-close">
-        <use href="./sprite/symb.svg#icon-close"></use>
-      </svg> -->
+      <button type="submit" class="form-close-icon">
+        <svg class="icon-close">
+          <use href="./sprite/symb.svg#icon-close"></use>
+        </svg>
+      </button>
     </form>
   </body>
 </html>

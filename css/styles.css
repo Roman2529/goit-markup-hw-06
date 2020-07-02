@@ -445,11 +445,11 @@ main {
   display: flex;
   /* align-items: center; */
 }
-.footer-blocks div {
+.footer-blocks > div {
   width: calc((50% - 45px) / 2);
   margin-right: 30px;
 }
-.footer-blocks div:last-child {
+.footer-blocks > div:last-child {
   width: calc(50% - 15px);
   margin-right: 0px;
 }
@@ -511,10 +511,11 @@ main {
 }
 .form-footer {
 
-}
+} 
 .input-footer {
   display: block;
-  min-width: 358px;
+  max-width: 358px;
+  width: 100%;
   padding-top: 15px;
   padding-bottom: 15px;
   padding-left: 16px;
@@ -526,7 +527,6 @@ main {
 }
 .footer-form-position {
   display: flex;
-  justify-content: space-between;
   position: relative;
   
 }
@@ -534,27 +534,25 @@ main {
   color: var(--white-title-text-color);
   background-color: var(--accent-color);
   border: 1px solid var(--accent-color);
-  /* display: block; */
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.06em;
   border-radius: 4px;
-  padding: 10px 62px 10px 29px;
+  padding: 10px 12px 10px 29px;
   min-width: 200px;
   border-style: none;
-  /* margin-left: auto;
-  margin-right: auto; */
 }
 .form-footer > .footer-title {
   display: block;
   margin-bottom: 20px;
 }
 .icon-telegram {
-  position: absolute;
+  /* position: absolute; */
   width: 24px;
-  right: -275px;
-  top: -48px;
+  height: 24px ;
+  vertical-align: middle;
+  margin-left: 5px;
 }
 
 
@@ -697,20 +695,24 @@ main {
 }
 
 /* form */
-p {
- margin: 0px;
-}
+
 .form-main {
- width: 528px;
- outline: 1px solid;
- border: 1px solid;
- border-radius: 4px;
- margin-left: auto;
- margin-right: auto;
- padding: 40px;
- box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12);
- position: relative;
+  max-width: 528px;
+  border-radius: 4px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 40px;
+  box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12);
+  position: relative;
+  background-color: var(--white-title-text-color);
+   rgba(0, 0, 0, 0.2);
+
+  position: absolute;
+  top: 222px;
+  transform: translateX(169%);
+  /* opacity: 0; */
 }
+
 .form-title {
   margin-top: 0px;
   margin-bottom: 30px;
@@ -725,27 +727,18 @@ p {
   display: flex;
   flex-direction: column;
   position: relative;
-  border: 1px solid rgba(33, 33, 33, 0.2);
-}
-/* .form-field .input {
-  width: 100%;
-  padding-top: 12px;
-  padding-bottom: 12px;
-  border-radius: 4px; */
 }
 
 .form-comment {
   margin-top: 0px;
   margin-bottom: 20px;
-  
-}
-
+} 
 .comment {
   padding: 12px 16px;
   width: 100%;
   border-radius: 4px;
   resize: none;
-  border: 1px solid rgba(33, 33, 33, 0.2);
+  /* border: 1px solid var(--accent-color); */
 }
 .checkbox input[type="checkbox"] {
   width: 16px;
@@ -783,7 +776,10 @@ line-height: 1.71;
 .form-input:focus + .form-label,
 .form-input:not(:placeholder-shown) + .form-label {
   color: var(--accent-color);
-  transform: translateY(-50px) translateX(-30px);
+  transform: translate(-26px, calc(-100% - 4px));
+  font-size: 12px;
+  top: 0;
+  
   /* border: var(--accent-color); */
   
 }
@@ -800,6 +796,7 @@ line-height: 1.71;
   left: 42px;
   transform: translateY(-50%);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  
 }
 .icon-input {
   position: absolute;
@@ -849,4 +846,20 @@ line-height: 1.71;
 .form-link {
   color: var(--accent-color);
   text-decoration: underline;
+}
+.form-close-icon {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top:1%;
+  right: 1%;
+}
+.icon-close {
+  width: 11px;
+  height: 11px;
+}  
+.form-close-icon:hover .icon-close {
+  fill: var(--accent-color);
 }
