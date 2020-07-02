@@ -522,6 +522,7 @@ main {
   background-color: inherit;
   border: 1px solid var(--border-botton-color);
   margin-right: 12px;
+  color: var(--footer-text-color);
 }
 .footer-form-position {
   display: flex;
