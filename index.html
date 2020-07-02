@@ -428,26 +428,68 @@
           </ul>
         </div>
         <div class="footer-secondary-block">
-          <b class="footer-title uppercase">Подпишитесь на рассылку</b>
+          <form class="form-footer">
+            <b class="footer-title uppercase">Подпишитесь на рассылку</b>
+            <!-- <label for="mail"></label>Почта</label> -->
+            <div class="footer-form-position">
+              <input
+                class="input-footer"
+                type="email"
+                name="mail"
+                id="mail"
+                placeholder="E-mail"
+              />
+              <button type="submit" class="button-footer">Подписаться</button>
+              <svg class="icon-telegram">
+                <use href="./sprite/symb.svg#icon-telegram"></use>
+              </svg>
+            </div>
+          </form>
         </div>
       </div>
     </footer>
-    <form>
+    <form class="form-main">
       <h2 class="form-title">Оставьте свои данные, мы вам перезвоним</h2>
       <p class="form-field">
-        <label for="name" ></label>Имя</label>
-        <input type="text" name="name" id="name" />
+        <input
+          class="form-input"
+          type="text"
+          name="name"
+          id="name"
+          placeholder=" "
+        />
+        <label class="form-label" for="name">Имя</label>
+        <svg class="icon-input">
+          <use href="./sprite/symb.svg#icon-person-modal"></use>
+        </svg>
       </p>
       <p class="form-field">
-        <label for="tel" ></label>Телефон</label>
-        <input type="tel" name="tel" id="tel" />
+        <input
+          class="form-input"
+          type="tel"
+          name="tel"
+          id="tel"
+          placeholder=" "
+        />
+        <label class="form-label" for="tel">Телефон</label>
+        <svg class="icon-input">
+          <use href="./sprite/symb.svg#icon-phone-modal"></use>
+        </svg>
       </p>
       <p class="form-field">
-        <label for="mail" ></label>Почта</label>
-        <input type="email" name="mail" id="mail" />
+        <input
+          class="form-input"
+          type="email"
+          name="mail"
+          id="mail"
+          placeholder=" "
+        />
+        <label class="form-label" for="mail">Почта</label>
+        <svg class="icon-input">
+          <use href="./sprite/symb.svg#icon-email-modal"></use>
+        </svg>
       </p>
       <p class="form-comment">
-        <label for="comment" ></label>Комментарий</label>
         <textarea
           name="comment"
           id="comment"
@@ -455,15 +497,29 @@
           class="comment"
           placeholder="Комментарий"
         ></textarea>
+        <label for="comment">Комментарий</label>
       </p>
       <p class="checkbox">
-        <input type="checkbox" name="topik" value="agree " id="agree" />
         <label for="agree" class="checkbox-label"
-          >Соглашаюсь с рассылкой и принимаю Условия договора</label
+          ><input
+            class="checkbox-input"
+            type="checkbox"
+            name="topik"
+            value="agree "
+            id="agree"
+          /><span class="checkbox-icon">
+            <svg class="icon-check-modal">
+              <use href="./sprite/symb.svg#icon-check-modal"></use>
+            </svg>
+          </span>
+          Соглашаюсь с рассылкой и принимаю
+          <a href="">Условия договора</a></label
         >
       </p>
-
       <button type="submit" class="button-form">Отправить</button>
+      <!-- <svg class="icon-close">
+        <use href="./sprite/symb.svg#icon-close"></use>
+      </svg> -->
     </form>
   </body>
 </html>
