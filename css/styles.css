@@ -844,3 +844,7 @@ line-height: 1.71;
   height: 100%;
   position: absolute;
 }
+.form-link {
+  color: var(--accent-color);
+  text-decoration: underline;
+}
